@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('employee','employeecontroller');
 
+Route::resource('test','testcontroller');
