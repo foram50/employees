@@ -17,4 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('employee','employeecontroller');
 
-Route::resource('test','testcontroller');
+Route::resource('form','testcontroller');
+
+Route::get('/', function () {
+    return view('welcome');
+});
