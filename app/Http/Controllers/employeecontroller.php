@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\employee; 
 
 class employeecontroller extends Controller
 {
@@ -14,7 +15,7 @@ class employeecontroller extends Controller
      */
     public function index()
     {
-        $employees = DB::table('employees')->get();
+        $employees = employee::orderby('id','asc')->get();//DB::table('employees')->get();
         return view('employee.view',compact('employees'));
     }
 
@@ -36,7 +37,17 @@ class employeecontroller extends Controller
      */
     public function store(Request $request)
     {
-        $flag=DB::table('employees')->insert([
+       // return $request->all();
+       // $flag=employee::create($request->all());
+
+      /* $employee =new employee;
+       $employee->name=$request->name;
+       $employee->designation=$request->designation;
+       $employee->salary=$request->salary;
+       $employee->joining_date=$request->joining_date;
+       $flag= $employee->save();*/
+
+       $flag=DB::table('employees')->insert([
             'name'=>$request->name,
             'designation'=>$request->designation,
             'salary'=>$request->salary,
@@ -84,6 +95,12 @@ class employeecontroller extends Controller
      */
     public function update(Request $request, $id)
     {
+        /*$employee = employee::find($id);
+       $employee->name=$request->name;
+       $employee->designation=$request->designation;
+       $employee->salary=$request->salary;
+       $employee->joining_date=$request->joining_date;
+       $flag= $employee->save();*/
          $employees=DB::table('employees')->where('id',$id)->update([
              'name'=>$request->name,
              'designation'=>$request->designation,
