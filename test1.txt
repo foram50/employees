@@ -1,0 +1,18 @@
+EASSy is a 10,000km submarine fibre-optic cable system deployed 
+along the east and south coast of Africa to service the voice, 
+data, video and internet needs of the region. It links South 
+Africa with Sudan via landing points in Mozambique, Madagascar, 
+the Comoros, Tanzania, Kenya, Somalia and Djibouti. The cable 
+incorporates the latest developments in submarine fibre-optic 
+technology, making it economical to connect the eastern and 
+southern coast of Africa into the high-speed global telecommunications 
+network. The system is owned and operated by a group of 16 African 
+(92%) and international (8%) telecommunications operators and service providers
+EASSy is the highest capacity system serving sub-Saharan Africa, 
+with more than 10Tbps, 2 fibre-pair configuration. 
+It is the first to deliver direct connectivity between east
+Africa and Europe / North America. It is also the only
+system with built-in resilience end-to-end. EASSy 
+interconnects with multiple international submarine 
+cable networks for diverse, seamless onward connectivity 
+to Europe, the Americas, the Middle East and Asia.
